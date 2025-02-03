@@ -903,7 +903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8044841122533686807, guid: c1b4ac07df4c6cb42918a8eeb5fd0c0a, type: 3}
   attackRange: 0.56
-  health: 3
+  health: 2
 --- !u!95 &916408982494690846
 Animator:
   serializedVersion: 5
