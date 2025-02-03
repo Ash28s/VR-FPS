@@ -7,6 +7,9 @@ public class TimerManager : MonoBehaviour
     public TMP_Text timerText; // UI text for displaying the timer
     public TMP_Text scoreText; // UI text for displaying the score in the end screen
     public GameObject scoreCanvas; // Canvas to display the score
+
+    public GameObject Canvas1;
+
     public float gameDuration = 180f; // 3 minutes in seconds
 
     private float remainingTime;
@@ -45,10 +48,11 @@ public class TimerManager : MonoBehaviour
         // Display the final score
         int finalScore = ScoreManager.Instance.GetScore();
         scoreCanvas.SetActive(true); // Activate the canvas
+        Canvas1.SetActive(false);
         scoreText.text = $"{finalScore}";
 
         // Transition to the end scene after 2 seconds
-        Invoke("LoadEndScene", 2f);
+        Invoke("LoadEndScene", 5f);
     }
 
     void LoadEndScene()
